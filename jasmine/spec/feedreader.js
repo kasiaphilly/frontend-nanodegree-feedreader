@@ -64,8 +64,6 @@ $(function() {
     /* This test suite checks if the feed displays initial entries */
     describe("Initial Entries", function() {
 
-      const feedContainer = document.querySelector(".feed");
-
       beforeEach(function(done) {
           loadFeed(0, done);
       });
@@ -73,13 +71,13 @@ $(function() {
       /* This test ensures that when the loadFeed function is called
        * and completes its work, there is at least a single .entry element
        * within the .feed container. */
+
       it("feed loads at least one entry", function(){
-        expect(allFeeds.hasChildren).toBe("true");
-        expect(allFeeds.firstChild.className).toContain("entry");
+        expect($(".entry").length).not.toBe(0);
       });
     });
 
-       /* This test suite tests the mechanism of loading a new feed */
+    /* This test suite tests the mechanism of loading a new feed */
     describe("New Feed Selection", function() {
       let previousFeed;
 

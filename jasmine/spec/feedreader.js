@@ -81,10 +81,11 @@ $(function() {
 
        /* This test suite tests the mechanism of loading a new feed */
     describe("New Feed Selection", function() {
+      var previousFeed;
 
       beforeEach(function(done) {
         loadFeed(0, function() {
-          const previousFeed = document.querySelector(".feed").innerHTML;
+          previousFeed = document.querySelector(".feed").innerHTML;
           loadFeed(1, function() {
             done();
           });

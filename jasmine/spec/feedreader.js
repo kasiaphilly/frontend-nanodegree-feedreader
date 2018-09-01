@@ -81,7 +81,7 @@ $(function() {
 
        /* This test suite tests the mechanism of loading a new feed */
     describe("New Feed Selection", function() {
-      var previousFeed;
+      let previousFeed;
 
       beforeEach(function(done) {
         loadFeed(0, function() {

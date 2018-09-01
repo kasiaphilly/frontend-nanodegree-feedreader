@@ -22,9 +22,9 @@ In order to perform the test, follow the steps below:
 * below the content of the displayed website you will see a Jasmine section providing information about the total number of specs, number of specs passed and number of failures.
 
 
-##Authors
+## Authors
 Katarzyna Elliott-Maksymowicz [k_maksymowicz](https://twitter.com/k_maksymowicz)
 
-##Version History
+## Version History
 0.1
 * First Version

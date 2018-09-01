@@ -20,7 +20,6 @@ $(function() {
             expect(allFeeds.length).not.toBe(0);
         });
 
-
         /* This test loops through each feed in the allFeeds object and
          * ensures it has a URL defined and that the URL is not empty. */
          it("should have a URL", function() {
@@ -39,7 +38,6 @@ $(function() {
            });
         });
     });
-
 
 /* This test suite tests the visibility of the menu*/
     describe("The menu", function() {
@@ -63,8 +61,6 @@ $(function() {
         });
     });
 
-
-
     /* This test suite checks if the feed displays initial entries */
     describe("Initial Entries", function() {
 
@@ -82,7 +78,6 @@ $(function() {
         expect(allFeeds.firstChild.className).toContain("entry");
       });
     });
-
 
        /* This test suite tests the mechanism of loading a new feed */
     describe("New Feed Selection", function() {
@@ -104,6 +99,5 @@ $(function() {
         expect(newFeed).not.toEqual(previousFeed);
       });
     });
-
 
 }());

@@ -72,7 +72,7 @@ $(function() {
          * within the .feed container. */
 
         it("feed loads at least one entry", function() {
-            expect($(".entry").length).not.toBe(0);
+            expect($("div.feed .entry").length).not.toBe(0);
         });
     });
 

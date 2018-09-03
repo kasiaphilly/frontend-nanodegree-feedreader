@@ -79,20 +79,20 @@ $(function() {
     /* This test suite tests the mechanism of loading a new feed */
     describe("New Feed Selection", function() {
         let previousFeed;
+        let newFeed;
 
         beforeEach(function(done) {
             loadFeed(0, function() {
                 previousFeed = document.querySelector(".feed").innerHTML;
                 loadFeed(1, function() {
-                    done();
+                  newFeed = document.querySelector(".feed").innerHTML;
+                  done();
                 });
             });
         });
 
         /* This test ensures that when a new feed is loaded
          * by the loadFeed function, the content actually changes. */
-        const newFeed = document.querySelector(".feed").innerHTML;
-
         it("content changes after reloading feed", function() {
             expect(newFeed).not.toEqual(previousFeed);
         });

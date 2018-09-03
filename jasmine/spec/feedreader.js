@@ -52,10 +52,10 @@ $(function() {
         /* This test ensures that the menu changes visibility when
          * the menu icon is clicked. */
         it("hides and shows on click", function() {
-            $(menu).trigger("click"); // first click on menu icon
+            $(menu).click(); // first click on menu icon
             expect(body.className).not.toContain("menu-hidden");
 
-            $(menu).trigger("click"); // second click on menu icon
+            $(menu).click(); // second click on menu icon
             expect(body.className).toContain("menu-hidden");
         });
     });
